@@ -29,7 +29,6 @@ export default function Index() {
               className="rounded-xl mx-auto w-3/4"
               width="400"
             />
-            <figcaption className="text-center pt-1">📸 Sergej Dukkardt</figcaption>
           </figure>
         )}
         <div className="md:w-3/5 text-center">
