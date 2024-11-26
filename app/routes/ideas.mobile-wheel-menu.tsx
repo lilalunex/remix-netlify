@@ -7,7 +7,7 @@ export default function MobileWhileMenu() {
       <br></br>
       Phones gotten way to big to use them with one hand.</p>
 
-    <div className="flex flex-col md:flex-row py-12 text-center justify-center items-center">
+    <div className="flex flex-col xl:flex-row py-12 text-center justify-center items-center">
       <img src="/ideas/mobile-wheel-menu/one.png" alt="" />
       <img src="/ideas/mobile-wheel-menu/two.png" alt="" />
       <img src="/ideas/mobile-wheel-menu/three.png" alt="" />
