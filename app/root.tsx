@@ -79,7 +79,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
           aria-label="Back to top"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          {/* Thicker arrow SVG */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
