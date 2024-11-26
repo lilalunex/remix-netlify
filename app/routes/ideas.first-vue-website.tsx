@@ -21,28 +21,27 @@ export default function FirstVueWebsite() {
           Open in a new tab
         </a>
       </p>
-      <br />
-      <p>iFrame:</p>
-      <br />
 
-      <div className="flex gap-4">
-        <label htmlFor="iframe-width" className="block text-lg">Width:</label>
-        <input
-          id="iframe-width"
-          type="text"
-          value={iframeWidth}
-          className="text-center border px-2 py-1 rounded w-24"
-          onChange={adjustIframeSize}
-        />
-        <label htmlFor="iframe-height" className="block text-lg">Height:</label>
-        <input
-          id="iframe-height"
-          type="text"
-          value={iframeHeight}
-          className="text-center border px-2 py-1 rounded w-24"
-          onChange={adjustIframeSize}
-        />
-      </div>
+      <div className="pt-8">
+        <p className="text-xl">iFrame:</p>
+        <div className="hidden md:flex gap-4 pt-4">
+          <label htmlFor="iframe-width" className="block">Width:</label>
+          <input
+            id="iframe-width"
+            type="text"
+            value={iframeWidth}
+            className="text-center border px-2 py-1 rounded w-24"
+            onChange={adjustIframeSize}
+          />
+          <label htmlFor="iframe-height" className="block">Height:</label>
+          <input
+            id="iframe-height"
+            type="text"
+            value={iframeHeight}
+            className="text-center border px-2 py-1 rounded w-24"
+            onChange={adjustIframeSize}
+          />
+        </div></div>
 
       <br />
       <iframe
