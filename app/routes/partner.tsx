@@ -43,7 +43,7 @@ export default function Partner() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row-reverse items-center justify-center md:space-x-8 w-full">
+      <div className="flex flex-col md:flex-row-reverse items-center justify-center md:space-x-8 w-full pt-12">
         <img
           src="/partner/jaxon.png"
           className="rounded-3xl w-full md:w-96 mb-4 md:mb-0"
