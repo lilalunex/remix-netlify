@@ -43,7 +43,7 @@ export default function Index() {
           </p>
           <div className="pt-8">
             <h2 className="pb-4">Skills</h2>
-            <div className="skills mx-auto flex flex-wrap justify-center md:gap-4">
+            <div className="skills mx-auto flex flex-wrap justify-center sm:gap-8 md:gap-4">
               <img src="/dev/skills/html5.png" alt="HTML5" className="w-24 h-24" />
               <img src="/dev/skills/css3.png" alt="CSS3" className="w-24 h-24" />
               <img src="/dev/skills/js.png" alt="JavaScript" className="w-24 h-24" />
@@ -59,7 +59,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-        <div className="hidden md:flex md:w-2/5 items-center">
+        <div className="hidden md:flex md:w-2/5 items-center md:mx-8 lg:mx-0">
           <figure>
             {randomImage && (
               <img
