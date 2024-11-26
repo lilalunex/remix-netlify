@@ -17,14 +17,14 @@ nav.main-navi {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767.98px) {
     .sub-navi {
         padding-bottom: 3rem;
         border-bottom: 3px solid var(--color-purple-5);
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     .sub-navi {
         min-height: 900px;
         padding-bottom: 0;
