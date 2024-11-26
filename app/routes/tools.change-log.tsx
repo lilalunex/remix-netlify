@@ -4,16 +4,26 @@ export default function ChangeLog() {
       date: "20.10.24",
       entries: [
         "Starting to learn Remix for potential new job.",
-        "Planning on creating this website with Remix."
+        "Planning on creating this website with Remix.",
       ],
     },
     {
       date: "23-24.10.24",
       entries: [
-        "Realizing this website in version 1.0."
+        <span>
+          Realizing this website in{" "}
+          <a
+            href="https://github.com/lilalunex/remix-netlify/tree/fbe90f84b1aec5abe1b8b6c588aef7ef228b5699"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            version 1.0.
+          </a>
+        </span>,
       ],
-    }
+    },
   ];
+
 
   return (
     <div className="page">
