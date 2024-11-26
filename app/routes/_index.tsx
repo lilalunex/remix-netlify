@@ -16,16 +16,6 @@ export default function Index() {
 
   return (
     <div className="dev">
-      <div className="mx-auto md:w-[450px] text-center uc">
-        <div className="w-auto py-6 info flex">
-          <p className="w-[20px] text-5xl ps-8 hidden md:block">🛈</p>
-          <p className="flex-grow">
-            🚧 Website not final
-            <br />
-            💻 As of now desktop only
-          </p>
-        </div>
-      </div>
 
       <div className="md:flex justify-between">
         <div className="md:w-3/5 text-center">
