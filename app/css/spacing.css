@@ -1,6 +1,12 @@
 nav,
-h2 {
+h1,
+h2,
+h3 {
     padding-bottom: 1.5rem;
+}
+
+.link-holder {
+    padding-top: 1.5rem;
 }
 
 .page,

@@ -7,4 +7,10 @@
     .skills {
         max-width: 500px;
     }
+
+    .socials {
+        a {
+            min-width: 120px;
+        }
+    }
 }
