@@ -75,7 +75,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
         <button
           id="back-to-top"
-          className="fixed bottom-10 right-10 p-4 bg-purple-500 text-white rounded-full shadow-lg hover:bg-purple-700 transition-all duration-300 opacity-0 invisible"
+          className="fixed bottom-10 right-10 p-4 text-white rounded-full shadow-lg hover:bg-purple-700 transition-all duration-300 opacity-0 invisible"
           aria-label="Back to top"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
@@ -84,7 +84,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            className="w-6 h-6 stroke-white"
+            className="w-6 h-6"
             strokeWidth="2"
           >
             <path d="M12 19V6M5 12l7-7 7 7" />

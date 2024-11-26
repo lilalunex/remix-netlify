@@ -11,6 +11,15 @@ nav.main-navi {
     transition: .3s;
 }
 
+#back-to-top {
+    background-color: var(--color-purple-5);
+    border: 2px solid black;
+
+    svg {
+        stroke: var(--color-purple-1);
+    }
+}
+
 @media (max-width: 768px) {
     nav.main-navi img {
         height: unset;
