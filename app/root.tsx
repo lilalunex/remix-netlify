@@ -31,14 +31,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <div className="container mx-auto pt-5 md:pt-10">
           <nav className="main-navi flex">
-            <ul className="flex space-x-12 text-2xl">
+            <ul className="flex md:space-x-12 text-2xl">
               <li><Link to="/"><img src="/menu/home.png" alt="" /></Link></li>
               <li><Link to="/ideas"><img src="/menu/ideas.png" alt="" /></Link></li>
               <li><Link to="/tools"><img src="/menu/tools.png" alt="" /></Link></li>
               <li><Link to="/partner"><img src="/menu/partner.png" alt="" /></Link></li>
               <li><Link to="/peace"><img src="/menu/peace.png" alt="" /></Link></li>
             </ul>
-            <div className="ms-auto text-right mt-auto">
+            <div className="ms-auto text-right mt-auto hidden md:block">
               <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank">Xing</a>
               <br />
               <a href="https://github.com/lilalunex" target="_blank">GitHub</a>
