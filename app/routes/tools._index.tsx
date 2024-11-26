@@ -27,6 +27,8 @@ export default function ToolsIndex() {
             ➖ Coin counter
             <br></br>
             ➖ Coin throw plain javascript
+            <br></br>
+            ➖ Information about you
           </p>
         </div>
         <div className="ms-auto mt-8 md:mt-0">
