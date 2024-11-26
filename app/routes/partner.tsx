@@ -8,7 +8,7 @@ export default function Partner() {
           <img src="/partner/dukkart.png" className="rounded-3xl w-96" alt="Sergej Dukkardt" />
           <div className="text-center">
             <h2 className="pt-3">Sergej Dukkardt</h2>
-            <p className="px-3 mx-auto">Fotograf. Media Creator. Mietstudio.</p>
+            <p className="px-3 mx-auto">Photographer. Media Creator. Rental Studio.</p>
             <div className="pt-3 link-holder">
               <a
                 href="http://dukkart.de"
@@ -47,7 +47,7 @@ export default function Partner() {
         <div className="flex items-center justify-center space-x-8">
           <div className="text-center">
             <h2 className="pt-3">Reza Jaxon</h2>
-            <p className="px-3 mx-auto">Tänzer. Graffiti-Artist. Designer.</p>
+            <p className="px-3 mx-auto">Dancer. Graffiti Artist. Designer.</p>
             <div className="pt-3 link-holder">
               <a
                 href="https://shibuy.art/"
