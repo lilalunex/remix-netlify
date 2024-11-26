@@ -21,17 +21,17 @@ export default function Index() {
   return (
     <div className="dev">
       <div className="md:flex justify-between">
-        <figure className="md:hidden pb-8">
-          {randomImage && (
+        {randomImage && (
+          <figure className="md:hidden pb-8">
             <img
               src={randomImage}
               alt="Random image of dev"
               className="rounded-xl mx-auto w-3/4"
               width="400"
             />
-          )}
-          <figcaption className="text-center pt-1">📸 Sergej Dukkardt</figcaption>
-        </figure>
+            <figcaption className="text-center pt-1">📸 Sergej Dukkardt</figcaption>
+          </figure>
+        )}
         <div className="md:w-3/5 text-center">
           <h1>Yet another web developer</h1>
           <p>
