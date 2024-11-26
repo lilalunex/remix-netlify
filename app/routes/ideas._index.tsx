@@ -1,7 +1,7 @@
 export default function IdeasIndex() {
   return (
     <div className="idea">
-      <div className="flex">
+      <div className="md:flex">
         <div>
           <h2>Ideas</h2>
           <p>
@@ -17,7 +17,7 @@ export default function IdeasIndex() {
             Have fun strolling around!
           </p>
         </div>
-        <div className="ms-auto">
+        <div className="ms-auto mt-8 md:mt-0">
           <img src="/ideas/dancer.png" alt="" className="rounded-3xl" width="300" />
         </div>
       </div>

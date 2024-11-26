@@ -8,13 +8,26 @@ nav.main-navi {
 
 .sub-navi {
     min-width: 300px;
-    min-height: 900px;
     transition: .3s;
-    border-right: 3px solid var(--color-purple-5);
 }
 
 @media (max-width: 768px) {
     nav.main-navi img {
         height: unset;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sub-navi {
+        padding-bottom: 3rem;
+        border-bottom: 3px solid var(--color-purple-5);
+    }
+}
+
+@media (min-width: 1200px) {
+    .sub-navi {
+        min-height: 900px;
+        padding-bottom: 0;
+        border-right: 3px solid var(--color-purple-5);
     }
 }

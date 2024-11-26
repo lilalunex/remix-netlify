@@ -2,7 +2,7 @@ import { Outlet, Link } from "@remix-run/react";
 
 export default function Ideas() {
   return (
-    <section id="ideas" className="flex">
+    <section id="ideas" className="md:flex">
       <div className="sub-navi">
         <h2>Navigation:</h2>
         <ul>
