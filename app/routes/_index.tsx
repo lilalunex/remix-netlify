@@ -34,7 +34,7 @@ export default function Index() {
         <div className="md:w-3/5 text-center">
           <h1>Yet another web developer</h1>
           <p>
-            This website was started to learn the <a href="https://remix.run/" target="_blank">Remix</a> framework.<br className="hidden md:block" /> Sure will not win a design awards as of now.<br className="hidden md:block" /> I enjoy Remix and look forward to improve this website.
+            This website was started to learn the <a href="https://remix.run/" target="_blank">Remix</a> framework.<br className="hidden md:block" /> Sure will not win a design award as of now.<br className="hidden md:block" /> I enjoy Remix and look forward to improve this website.
           </p>
           <p className="link-holder">
             <a
