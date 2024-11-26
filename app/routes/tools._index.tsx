@@ -25,6 +25,8 @@ export default function ToolsIndex() {
             ➖ Coin throw with ThreeJS
             <br></br>
             ➖ Coin counter
+            <br></br>
+            ➖ Coin throw plain javascript
           </p>
         </div>
         <div className="ms-auto mt-8 md:mt-0">
