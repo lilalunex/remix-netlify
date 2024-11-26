@@ -28,7 +28,7 @@ export default function ToolsIndex() {
             <br></br>
             ➖ Coin throw plain javascript
             <br></br>
-            ➖ Information about you
+            ➖ Information I can get through the user from you
           </p>
         </div>
         <div className="ms-auto mt-8 md:mt-0">
