@@ -10,11 +10,11 @@ export default function Index() {
   const [randomImage, setRandomImage] = useState<string>("");
 
   useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * images.length);
-
     const isMobile = window.innerWidth < 768;
+
     const filteredImages = isMobile ? images.slice(1) : images;
 
+    const randomIndex = Math.floor(Math.random() * filteredImages.length);
     setRandomImage(filteredImages[randomIndex]);
   }, []);
 
