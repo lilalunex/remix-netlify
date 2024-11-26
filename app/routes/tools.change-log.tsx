@@ -17,9 +17,16 @@ export default function ChangeLog() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            version 1.0.
+            version 1.0
           </a>
+          .
         </span>,
+      ],
+    },
+    {
+      date: "26.10.24",
+      entries: [
+        "Hosting on Netlify."
       ],
     },
   ];
