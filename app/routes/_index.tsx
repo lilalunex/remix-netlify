@@ -11,13 +11,27 @@ export default function Index() {
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * images.length);
-    setRandomImage(images[randomIndex]);
+
+    const isMobile = window.innerWidth < 768;
+    const filteredImages = isMobile ? images.slice(1) : images;
+
+    setRandomImage(filteredImages[randomIndex]);
   }, []);
 
   return (
     <div className="dev">
-
       <div className="md:flex justify-between">
+        <figure className="md:hidden pb-8">
+          {randomImage && (
+            <img
+              src={randomImage}
+              alt="Random image of dev"
+              className="rounded-xl mx-auto w-3/4"
+              width="400"
+            />
+          )}
+          <figcaption className="text-center pt-1">📸 Sergej Dukkardt</figcaption>
+        </figure>
         <div className="md:w-3/5 text-center">
           <h1>Yet another web developer</h1>
           <p>
