@@ -23,10 +23,7 @@ main {
     padding-right: 1.5rem;
 }
 
-.page {
-    padding-left: 3rem;
-}
-
+.page,
 .partner,
 .peace {
     padding-bottom: 3rem;
@@ -34,6 +31,10 @@ main {
 
 @media (min-width: 1200px) {
     .idea {
+        padding-left: 3rem;
+    }
+
+    .page {
         padding-left: 3rem;
     }
 }

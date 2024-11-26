@@ -1,10 +1,12 @@
 export default function ChangeLog() {
   const changeLogEntries = [
     {
-      date: "20.10.24",
+      date: "26.10.24",
       entries: [
-        "Starting to learn Remix for potential new job.",
-        "Planning on creating this website with Remix.",
+        "Hosting on Netlify.",
+        <p>
+          Added responsiveness.<br></br><i className="pl-8 font-extralight">💭 Looks pretty neat on mobile.</i>
+        </p>
       ],
     },
     {
@@ -24,9 +26,10 @@ export default function ChangeLog() {
       ],
     },
     {
-      date: "26.10.24",
+      date: "20.10.24",
       entries: [
-        "Hosting on Netlify."
+        "Starting to learn Remix for potential new job.",
+        "Planning on creating this website with Remix.",
       ],
     },
   ];
@@ -37,7 +40,7 @@ export default function ChangeLog() {
       <h2>Change Log</h2>
       <div>
         {changeLogEntries.map((entryGroup, index) => (
-          <div key={index} className="mb-4">
+          <div key={index} className="md:mb-4 pt-4 md:pt-0">
             <div className="flex">
               <div className="font-bold w-32">{entryGroup.date}</div>
               <div className="flex-1">
