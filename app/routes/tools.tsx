@@ -6,7 +6,7 @@ export default function Tools() {
       <div className="sub-navi">
         <h2>Navigation:</h2>
         <ul>
-          <li><Link to="change-log">- Change Log</Link></li>
+          <li><Link to="change-log">- Change log</Link></li>
         </ul>
       </div>
       <div className="flex-grow">

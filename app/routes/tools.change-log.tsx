@@ -37,7 +37,7 @@ export default function ChangeLog() {
 
   return (
     <div className="page">
-      <h2>Change Log</h2>
+      <h2>Change log</h2>
       <div>
         {changeLogEntries.map((entryGroup, index) => (
           <div key={index} className="md:mb-4 pt-4 md:pt-0">
