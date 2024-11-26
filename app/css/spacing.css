@@ -29,7 +29,7 @@ main {
     padding-bottom: 3rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     .idea {
         padding-left: 3rem;
     }
