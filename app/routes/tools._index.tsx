@@ -28,7 +28,7 @@ export default function ToolsIndex() {
             <br></br>
             ➖ Coin throw plain javascript
             <br></br>
-            ➖ Information I can get through the user from you
+            ➖ Display information about you I can get from the browser
           </p>
         </div>
         <div className="ms-auto mt-8 md:mt-0">
