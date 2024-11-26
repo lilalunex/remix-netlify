@@ -1,7 +1,7 @@
 export default function ToolsIndex() {
   return (
     <div className="idea">
-      <div className="flex">
+      <div className="md:flex">
         <div>
           <h2>Tools</h2>
           <p>
@@ -27,7 +27,7 @@ export default function ToolsIndex() {
             ➖ Coin counter
           </p>
         </div>
-        <div className="ms-auto">
+        <div className="ms-auto mt-8 md:mt-0">
           <figure>
             <img src="/dev/dev4.jpg" alt="" className="rounded-3xl" width="300" />
             <figcaption className="text-center pt-1">📸 Sergej Dukkardt</figcaption>
