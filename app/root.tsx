@@ -1,5 +1,5 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration, Link, useNavigation } from "@remix-run/react";
-import type { LinksFunction } from "@remix-run/node";
+import { useEffect } from "react";
 
 import "./css/base.css";
 import "./css/dev.css";
@@ -8,7 +8,7 @@ import "./css/nav.css";
 import "./css/spacing.css";
 import "./css/typography.css";
 
-export const links: LinksFunction = () => [
+export const links = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
   {
@@ -19,6 +19,26 @@ export const links: LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const navigation = useNavigation();
+
+  useEffect(() => {
+    const backToTopButton = document.getElementById("back-to-top");
+
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight / 2) {
+        backToTopButton?.classList.remove("opacity-0", "invisible");
+        backToTopButton?.classList.add("opacity-100", "visible");
+      } else {
+        backToTopButton?.classList.add("opacity-0", "invisible");
+        backToTopButton?.classList.remove("opacity-100", "visible");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <html lang="en">
@@ -52,10 +72,31 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <main>{children}</main>
           </div>
         </div>
+
+        <button
+          id="back-to-top"
+          className="fixed bottom-10 right-10 p-4 bg-purple-500 text-white rounded-full shadow-lg hover:bg-purple-700 transition-all duration-300 opacity-0 invisible"
+          aria-label="Back to top"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
+          {/* Thicker arrow SVG */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            className="w-6 h-6 stroke-white"
+            strokeWidth="2"
+          >
+            <path d="M12 19V6M5 12l7-7 7 7" />
+          </svg>
+        </button>
+
+
         <ScrollRestoration />
         <Scripts />
       </body>
-    </html >
+    </html>
   );
 }
 
