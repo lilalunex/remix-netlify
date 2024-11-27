@@ -8,7 +8,7 @@ export default function Partner() {
           <img src="/partner/dukkart.png" className="rounded-3xl md:w-96" alt="Sergej Dukkardt" />
           <div className="text-center">
             <h3 className="pt-3">Sergej Dukkardt</h3>
-            <p className="px-3 mx-auto">Photographer. Media Creator. Rental Studio.</p>
+            <p className="px-3 mx-auto">Photographer. Media Creator. Rental-studio.</p>
             <div className="pt-3 link-holder">
               <a
                 href="http://dukkart.de"
@@ -26,7 +26,7 @@ export default function Partner() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Mietstudio
+                Rental-studio
               </a>
             </div>
             <div className="pt-5 link-holder">
