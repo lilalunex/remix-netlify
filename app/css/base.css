@@ -71,15 +71,3 @@ main {
 .color-link:hover {
     color: var(--color-teal-1-hover);
 }
-
-main {
-    flex: 1;
-    padding: 2rem 4rem;
-    width: 100%;
-}
-
-main.loading {
-    opacity: 0.25;
-    transition: opacity 200ms;
-    transition-delay: 200ms;
-}

@@ -1,4 +1,4 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration, Link, useNavigation } from "@remix-run/react";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration, Link } from "@remix-run/react";
 import { useEffect } from "react";
 
 import "./css/base.css";
@@ -18,8 +18,6 @@ export const links = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const navigation = useNavigation();
-
   useEffect(() => {
     const backToTopButton = document.getElementById("back-to-top");
 
@@ -68,7 +66,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <a href="https://instagram.com/lilalunex" target="_blank">Instagram</a>
             </div>
           </nav>
-          <main className={navigation.state === "loading" ? "loading" : ""}>{children}</main>
+          <main>{children}</main>
         </div>
 
         <button
