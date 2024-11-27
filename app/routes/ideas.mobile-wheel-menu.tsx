@@ -8,10 +8,10 @@ export default function MobileWhileMenu() {
       Phones gotten way to big to use them with one hand.</p>
 
     <div className="flex flex-col xl:flex-row py-12 text-center justify-center items-center">
-      <img src="/ideas/mobile-wheel-menu/one.png" alt="" />
-      <img src="/ideas/mobile-wheel-menu/two.png" alt="" />
-      <img src="/ideas/mobile-wheel-menu/three.png" alt="" />
-      <img src="/ideas/mobile-wheel-menu/four.png" alt="" />
+      <img src="/ideas/mobile-wheel-menu/one.png" alt="One Handed Mobile Menu 1" loading="lazy" />
+      <img src="/ideas/mobile-wheel-menu/two.png" alt="One Handed Mobile Menu 2" loading="lazy" />
+      <img src="/ideas/mobile-wheel-menu/three.png" alt="One Handed Mobile Menu 3" loading="lazy" />
+      <img src="/ideas/mobile-wheel-menu/four.png" alt="One Handed Mobile Menu 4" loading="lazy" />
     </div>
 
     <p>I will not pursue this idea further:

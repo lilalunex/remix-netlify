@@ -28,6 +28,7 @@ export default function Index() {
               alt="Random image of dev"
               className="rounded-xl mx-auto w-3/4"
               width="400"
+              loading="lazy"
             />
           </figure>
         )}
@@ -47,18 +48,18 @@ export default function Index() {
           <div className="pt-8">
             <h2 className="pb-4">Skills</h2>
             <div className="skills mx-auto flex flex-wrap justify-center sm:gap-8 md:gap-4">
-              <img src="/dev/skills/html5.png" alt="HTML5" className="w-24 h-24" />
-              <img src="/dev/skills/css3.png" alt="CSS3" className="w-24 h-24" />
-              <img src="/dev/skills/js.png" alt="JavaScript" className="w-24 h-24" />
-              <img src="/dev/skills/mysql.png" alt="MySQL" className="w-24 h-24" />
-              <img src="/dev/skills/sass.png" alt="Sass" className="w-24 h-24" />
-              <img src="/dev/skills/bs.png" alt="Bootstrap" className="w-24 h-24" />
-              <img src="/dev/skills/tw.png" alt="Tailwind" className="w-24 h-24" />
-              <img src="/dev/skills/wp.png" alt="WordPress" className="w-24 h-24" />
-              <img src="/dev/skills/woo.png" alt="WooCommerce" className="w-24 h-24" />
-              <img src="/dev/skills/t3.png" alt="WooCommerce" className="w-24 h-24" />
-              <img src="/dev/skills/vue.png" alt="Vue.js" className="w-24 h-24" />
-              <img src="/dev/skills/sw.png" alt="Vue.js" className="w-24 h-24" />
+              <img src="/dev/skills/html5.png" alt="HTML5" className="w-24 h-24" loading="lazy" />
+              <img src="/dev/skills/css3.png" alt="CSS3" className="w-24 h-24" loading="lazy" />
+              <img src="/dev/skills/js.png" alt="JavaScript" className="w-24 h-24" loading="lazy" />
+              <img src="/dev/skills/mysql.png" alt="MySQL" className="w-24 h-24" loading="lazy" />
+              <img src="/dev/skills/sass.png" alt="Sass" className="w-24 h-24" loading="lazy" />
+              <img src="/dev/skills/bs.png" alt="Bootstrap" className="w-24 h-24" loading="lazy" />
+              <img src="/dev/skills/tw.png" alt="TailwindCSS" className="w-24 h-24" loading="lazy" />
+              <img src="/dev/skills/wp.png" alt="WordPress" className="w-24 h-24" loading="lazy" />
+              <img src="/dev/skills/woo.png" alt="WooCommerce" className="w-24 h-24" loading="lazy" />
+              <img src="/dev/skills/t3.png" alt="TYPO3" className="w-24 h-24" loading="lazy" />
+              <img src="/dev/skills/vue.png" alt="Vue.js" className="w-24 h-24" loading="lazy" />
+              <img src="/dev/skills/sw.png" alt="Shopware" className="w-24 h-24" loading="lazy" />
             </div>
           </div>
         </div>
@@ -70,6 +71,7 @@ export default function Index() {
                 alt="Random image of dev"
                 className="rounded-xl"
                 width="400"
+                loading="lazy"
               />
             )}
             <figcaption className="text-center pt-1">📸 Sergej Dukkardt</figcaption>

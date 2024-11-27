@@ -18,7 +18,7 @@ export default function IdeasIndex() {
           </p>
         </div>
         <div className="ms-auto mt-8 md:mt-0">
-          <img src="/ideas/dancer.png" alt="" className="rounded-3xl" width="300" />
+          <img src="/ideas/dancer.png" alt="Dancer in Lotus Handstand Invert" className="rounded-3xl" width="300" loading="lazy" />
         </div>
       </div>
     </div>

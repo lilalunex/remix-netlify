@@ -5,7 +5,7 @@ export default function Partner() {
 
       <div className="py-5 container mx-auto">
         <div className="md:flex items-center justify-center md:space-x-8">
-          <img src="/partner/dukkart.png" className="rounded-3xl md:w-96" alt="Sergej Dukkardt" />
+          <img src="/partner/dukkart.png" className="rounded-3xl md:w-96" alt="Sergej Dukkardt" loading="lazy" />
           <div className="text-center">
             <h3 className="pt-3">Sergej Dukkardt</h3>
             <p className="px-3 mx-auto">Photographer. Media Creator. Rental-studio.</p>
@@ -48,6 +48,7 @@ export default function Partner() {
           src="/partner/jaxon.png"
           className="rounded-3xl w-full md:w-96 mb-4 md:mb-0"
           alt="Reza Jaxon"
+          loading="lazy"
         />
 
         <div className="text-center w-full md:w-auto">

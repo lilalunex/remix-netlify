@@ -52,11 +52,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto pt-5 md:pt-10">
           <nav className="main-nav flex">
             <ul className="flex md:space-x-4 text-2xl">
-              <li><Link to="/"><img src="/menu/home.png" alt="" /></Link></li>
-              <li><Link to="/ideas"><img src="/menu/ideas.png" alt="" /></Link></li>
-              <li><Link to="/tools"><img src="/menu/tools.png" alt="" /></Link></li>
-              <li><Link to="/partner"><img src="/menu/partner.png" alt="" /></Link></li>
-              <li><Link to="/peace"><img src="/menu/peace.png" alt="" /></Link></li>
+              <li><Link to="/"><img src="/menu/home.png" alt="Main Menu Navigation Home" loading="lazy" /></Link></li>
+              <li><Link to="/ideas"><img src="/menu/ideas.png" alt="Main Menu Navigation Ideas" loading="lazy" /></Link></li>
+              <li><Link to="/tools"><img src="/menu/tools.png" alt="Main Menu Navigation Tools" loading="lazy" /></Link></li>
+              <li><Link to="/partner"><img src="/menu/partner.png" alt="Main Menu Navigation Partner" loading="lazy" /></Link></li>
+              <li><Link to="/peace"><img src="/menu/peace.png" alt="Main Menu Navigation Peace" loading="lazy" /></Link></li>
             </ul>
             <div className="main-nav-socials ms-auto text-right mt-auto hidden md:block">
               <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank">Xing</a>

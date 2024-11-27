@@ -31,7 +31,7 @@ export default function ToolsIndex() {
         </div>
         <div className="ms-auto mt-8 md:mt-0">
           <figure>
-            <img src="/dev/dev4.jpg" alt="" className="rounded-3xl" width="300" />
+            <img src="/dev/dev4.jpg" alt="" className="rounded-3xl" width="300" loading="lazy" />
             <figcaption className="text-center pt-1">📸 Sergej Dukkardt</figcaption>
           </figure>
         </div>
