@@ -58,7 +58,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <li><Link to="/partner"><img src="/menu/partner.png" alt="" /></Link></li>
               <li><Link to="/peace"><img src="/menu/peace.png" alt="" /></Link></li>
             </ul>
-            <div className="ms-auto text-right mt-auto hidden md:block">
+            <div className="main-nav-socials ms-auto text-right mt-auto hidden md:block">
               <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank">Xing</a>
               <br />
               <a href="https://github.com/lilalunex" target="_blank">GitHub</a>
