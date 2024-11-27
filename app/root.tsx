@@ -68,9 +68,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <a href="https://instagram.com/lilalunex" target="_blank">Instagram</a>
             </div>
           </nav>
-          <div className={navigation.state === "loading" ? "loading" : ""} id="detail">
-            <main>{children}</main>
-          </div>
+          <main className={navigation.state === "loading" ? "loading" : ""} id="loader">{children}</main>
         </div>
 
         <button
@@ -90,8 +88,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <path d="M12 19V6M5 12l7-7 7 7" />
           </svg>
         </button>
-
-
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -100,5 +96,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <Outlet />
+  );
 }
