@@ -68,7 +68,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <a href="https://instagram.com/lilalunex" target="_blank">Instagram</a>
             </div>
           </nav>
-          <main className={navigation.state === "loading" ? "loading" : ""} id="loader">{children}</main>
+          <main className={navigation.state === "loading" ? "loading" : ""}>{children}</main>
         </div>
 
         <button
