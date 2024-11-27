@@ -63,3 +63,11 @@ main {
     transition: opacity 200ms;
     transition-delay: 200ms;
 }
+
+.color-link {
+    color: var(--color-teal-1);
+}
+
+.color-link:hover {
+    color: var(--color-teal-1-hover);
+}
