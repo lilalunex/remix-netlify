@@ -1,4 +1,4 @@
-nav.main-navi {
+nav.main-nav {
     border-bottom: 3px solid var(--color-purple-5);
 
     img {
@@ -6,7 +6,7 @@ nav.main-navi {
     }
 }
 
-.sub-navi {
+.sub-nav {
     min-width: 300px;
     transition: .3s;
 }
@@ -21,20 +21,20 @@ nav.main-navi {
 }
 
 @media (max-width: 768px) {
-    nav.main-navi img {
+    nav.main-nav img {
         height: unset;
     }
 }
 
 @media (max-width: 767.98px) {
-    .sub-navi {
+    .sub-nav {
         padding-bottom: 3rem;
         border-bottom: 3px solid var(--color-purple-5);
     }
 }
 
 @media (min-width: 768px) {
-    .sub-navi {
+    .sub-nav {
         min-height: 900px;
         padding-bottom: 0;
         border-right: 3px solid var(--color-purple-5);

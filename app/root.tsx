@@ -50,7 +50,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <div className="container mx-auto pt-5 md:pt-10">
-          <nav className="main-navi flex">
+          <nav className="main-nav flex">
             <ul className="flex md:space-x-4 text-2xl">
               <li><Link to="/"><img src="/menu/home.png" alt="" /></Link></li>
               <li><Link to="/ideas"><img src="/menu/ideas.png" alt="" /></Link></li>

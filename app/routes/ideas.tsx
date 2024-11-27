@@ -3,7 +3,7 @@ import { Outlet, Link } from "@remix-run/react";
 export default function Ideas() {
   return (
     <section id="ideas" className="md:flex">
-      <div className="sub-navi">
+      <div className="sub-nav">
         <h2>Navigation:</h2>
         <ul>
           <li><Link to="mobile-wheel-menu">- One handed mobile menu</Link></li>
