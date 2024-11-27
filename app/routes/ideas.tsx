@@ -11,6 +11,8 @@ export default function Ideas() {
           <li><Link to="first-vue-website">- First Vue website</Link></li>
           <br></br>
           <li><Link to="socialize-mmo">- Socialize MMO</Link></li>
+          <br></br>
+          <li><Link to="the-coworking-hub">- The coworking hub</Link></li>
         </ul>
       </div>
       <div className="flex-grow">
