@@ -1,9 +1,5 @@
-nav.main-nav {
+.main-nav-holder {
     border-bottom: 3px solid var(--color-purple-5);
-
-    img {
-        height: 100px;
-    }
 }
 
 .sub-nav {
@@ -20,12 +16,6 @@ nav.main-nav {
     }
 }
 
-@media (max-width: 768px) {
-    nav.main-nav img {
-        height: 75px;
-    }
-}
-
 @media (max-width: 767.98px) {
     .sub-nav {
         padding-bottom: 3rem;
@@ -38,5 +28,11 @@ nav.main-nav {
         min-height: 900px;
         padding-bottom: 0;
         border-right: 3px solid var(--color-purple-5);
+    }
+
+    nav.main-nav {
+        img {
+            height: 100px;
+        }
     }
 }

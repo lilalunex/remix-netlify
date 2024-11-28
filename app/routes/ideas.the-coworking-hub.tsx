@@ -1,20 +1,16 @@
-import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 export default function FirstVueWebsite() {
+  const { t } = useTranslation();
 
   return (
     <div className="idea first-vue-website">
       <h2>The coworking hub</h2>
-      <p>
-        A goto place for coworkers to find all sorts of information:
-        <br></br>
-        <br></br>
-        - how to (i.e. pomodoro, todolists)
-        <br></br>
-        - links to tools (i.e. pomofocus.io)
-        <br></br>
-        - links to coworking twitch channels
-      </p>
+      <p
+        dangerouslySetInnerHTML={{
+          __html: t('ideas.the-coworking-hub.text'),
+        }}
+      ></p>
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration, Link } from "@remix-run/react";
 import { useEffect } from "react";
+import LanguageSwitcher from './i18n/LanguageSwitcherDesktop';
+import './i18n/i18n';
 
 import "./css/base.css";
 import "./css/dev.css";
@@ -18,6 +20,7 @@ export const links = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+
   useEffect(() => {
     const backToTopButton = document.getElementById("back-to-top");
 
@@ -48,15 +51,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <div className="container mx-auto pt-5 md:pt-10">
-          <nav className="main-nav flex justify-center">
-            <ul className="flex md:space-x-4 text-2xl">
-              <li><Link to="/"><img src="/menu/home.png" alt="Main Menu Navigation Home" loading="lazy" /></Link></li>
-              <li><Link to="/ideas"><img src="/menu/ideas.png" alt="Main Menu Navigation Ideas" loading="lazy" /></Link></li>
-              <li><Link to="/tools"><img src="/menu/tools.png" alt="Main Menu Navigation Tools" loading="lazy" /></Link></li>
-              <li><Link to="/partner"><img src="/menu/partner.png" alt="Main Menu Navigation Partner" loading="lazy" /></Link></li>
-              <li><Link to="/peace"><img src="/menu/peace.png" alt="Main Menu Navigation Peace" loading="lazy" /></Link></li>
-            </ul>
-            <div className="main-nav-socials ms-auto text-right mt-auto hidden md:block">
+          <div className="main-nav-holder flex">
+            <nav className="main-nav mx-auto md:mx-0">
+              <ul className="flex md:space-x-4 text-2xl">
+                <li><Link to="/"><img src="/menu/home.png" alt="Main Menu Navigation Home" loading="lazy" /></Link></li>
+                <li><Link to="/ideas"><img src="/menu/ideas.png" alt="Main Menu Navigation Ideas" loading="lazy" /></Link></li>
+                <li><Link to="/tools"><img src="/menu/tools.png" alt="Main Menu Navigation Tools" loading="lazy" /></Link></li>
+                <li><Link to="/partner"><img src="/menu/partner.png" alt="Main Menu Navigation Partner" loading="lazy" /></Link></li>
+                <li><Link to="/peace"><img src="/menu/peace.png" alt="Main Menu Navigation Peace" loading="lazy" /></Link></li>
+              </ul>
+            </nav>
+            <div className="main-nav-socials ms-auto text-right hidden md:block mr-8">
               <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank">Xing</a>
               <br />
               <a href="https://github.com/lilalunex" target="_blank">GitHub</a>
@@ -65,7 +70,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <br />
               <a href="https://instagram.com/lilalunex" target="_blank">Instagram</a>
             </div>
-          </nav>
+            <LanguageSwitcher />
+          </div>
           <main>{children}</main>
         </div>
 

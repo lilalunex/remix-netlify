@@ -1,0 +1,8 @@
+{
+    "dev": {
+        "intro": "このウェブサイトは<a href=\"https://remix.run/\" target=\"_blank\">Remix</a>フレームワークを学ぶために始めました。<br className=\"hidden md:block\" /> 現時点ではデザイン賞は取れませんが、<br className=\"hidden md:block\" /> Remixを楽しみ、このウェブサイトを改善していきたいです。"
+    },
+    "ideas": {
+        "intro": "ここでは次のものを見つけられます：<br><br>💡 私のアイデア<br>💼 私が作成したウェブサイト<br><br><br>ごゆっくりお楽しみください！"
+    }
+}
