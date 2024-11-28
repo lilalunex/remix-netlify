@@ -1,7 +1,7 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration, Link } from "@remix-run/react";
 import { useEffect } from "react";
 import { I18nextProvider, useTranslation } from "react-i18next";
-import LanguageSwitcher from './i18n/LanguageSwitcherDesktop';
+import LanguageSwitcherDesktop from './i18n/LanguageSwitcherDesktop';
 import i18n from "./i18n/i18n";
 
 import "./css/base.css";
@@ -75,7 +75,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <div><a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" target="_blank">{t('dev.profiles.linkedin')}</a></div>
                 <div><a href="https://instagram.com/lilalunex" target="_blank">{t('dev.profiles.instagram')}</a></div>
               </div>
-              <LanguageSwitcher />
+              <LanguageSwitcherDesktop />
             </div>
             <main>{children}</main>
           </div>

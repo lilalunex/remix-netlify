@@ -16,15 +16,23 @@
     "dukkart": "DukkArt Digital"
   },
   "ideas": {
+    "title": "Ideas",
     "intro": "Here you will find:<br><br>💡 Ideas I have<br>💼 Websites I made<br><br><br>Have fun strolling around!",
+    "navi-title": "Navigation:",
     "mobile-wheel-menu": {
+      "title": "One handed mobile menu",
       "intro": "Mobile websites have their menu on the top.<br>Nice to look at but not handy to use.<br>Phones gotten way to big to use them with one hand.",
       "ending": "I will not pursue this idea further:<br>1. Menu will take up too much space in the middle of the page. You could hide it but doing a fancy gesture everytime to get the menu will annoy the user.<br>2. Learning: The content displayed on a site is more important than the menu which got me there.<br><br>Drawn on iPad with Procreate."
     },
+    "first-vue-website": {
+      "title": "First Vue website"
+    },
     "socialize-mmo": {
+      "title": "Socialize MMO",
       "text": "In thinking about what little chill game you can play here and there,<br>I came up with this idea.<br><br>2D MMO. Playable in the browser. Just hop in. Text with random people.<br>Maybe features like fishing, housing.<br><br>I'd like to work on that one day.<br>Mostly for fun and vision."
     },
     "the-coworking-hub": {
+      "title": "The coworking hub",
       "text": "A goto place for coworkers to find all sorts of information:<br><br>- how to (i.e. pomodoro, todolists)<br>- links to tools (i.e. pomofocus.io)<br>- links to coworking twitch channels"
     }
   }

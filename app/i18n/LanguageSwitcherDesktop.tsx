@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const LanguageSwitcher = () => {
+const LanguageSwitcherDesktop = () => {
     const { i18n } = useTranslation();
 
     const changeLanguage = (lng: string) => {
@@ -33,4 +33,4 @@ const LanguageSwitcher = () => {
     );
 };
 
-export default LanguageSwitcher;
+export default LanguageSwitcherDesktop;

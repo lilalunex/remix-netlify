@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import LanguageSwitcher from '../i18n/LanguageSwitcherMobile';
+import LanguageSwitcherMobile from "~/i18n/LanguageSwitcherMobile";
 import { useTranslation } from 'react-i18next';
 import i18n from "../i18n/i18n";
 
@@ -26,11 +26,11 @@ export default function Index() {
 
   return (
     <div>
-      <LanguageSwitcher />
+      <LanguageSwitcherMobile />
       <div className="dev">
-        <div className="md:flex justify-between">
+        <div className="lg:flex justify-between">
           {randomImage && (
-            <figure className="md:hidden pb-8">
+            <figure className="lg:hidden pb-8">
               <img
                 src={randomImage}
                 alt="Random image of dev"
@@ -40,7 +40,7 @@ export default function Index() {
               />
             </figure>
           )}
-          <div className="md:w-3/5 text-center">
+          <div className="lg:w-3/5 text-center">
             <h1>{t('dev.title')}</h1>
             <p
               dangerouslySetInnerHTML={{
@@ -73,7 +73,7 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <div className="hidden md:flex md:w-2/5 items-center md:mx-8 lg:mx-0">
+          <div className="hidden lg:flex lg:w-2/5 items-center md:mx-8 lg:mx-0">
             <figure>
               {randomImage && (
                 <img
