@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import LanguageSwitcher from '../i18n/LanguageSwitcherMobile';
 import { useTranslation } from 'react-i18next';
-import '../i18n/i18n';
+import i18n from "../i18n/i18n";
 
 export default function Index() {
   const { t } = useTranslation();
+  const isGerman = i18n.language === 'de';
 
   const images = [
     "/dev/dev1.jpg",
@@ -91,7 +92,9 @@ export default function Index() {
           <h2>{t('dev.profiles.title')}</h2>
           <div className="md:flex justify-center gap-8">
             <div className="pb-6 md:pb-0 gap-4 md:gap-8 flex justify-center">
-              <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank" className="btn border-2 py-4 px-6 rounded-full">{t('dev.profiles.xing')}</a>
+              {isGerman && (
+                <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank" className="btn border-2 py-4 px-6 rounded-full">{t('dev.profiles.xing')}</a>
+              )}
               <a href="https://github.com/lilalunex" target="_blank" className="btn border-2 py-4 px-6 rounded-full">{t('dev.profiles.github')}</a>
             </div>
             <div className="gap-4 md:gap-8 flex justify-center">

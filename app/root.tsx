@@ -1,6 +1,6 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration, Link } from "@remix-run/react";
 import { useEffect } from "react";
-import { I18nextProvider } from "react-i18next";
+import { I18nextProvider, useTranslation } from "react-i18next";
 import LanguageSwitcher from './i18n/LanguageSwitcherDesktop';
 import i18n from "./i18n/i18n";
 
@@ -21,6 +21,8 @@ export const links = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const { t } = useTranslation();
+  const isGerman = i18n.language === 'de';
 
   useEffect(() => {
     const backToTopButton = document.getElementById("back-to-top");
@@ -63,14 +65,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   <li><Link to="/peace"><img src="/menu/peace.png" alt="Main Menu Navigation Peace" loading="lazy" /></Link></li>
                 </ul>
               </nav>
-              <div className="main-nav-socials ms-auto text-right hidden md:block mr-8">
-                <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank">Xing</a>
-                <br />
-                <a href="https://github.com/lilalunex" target="_blank">GitHub</a>
-                <br />
-                <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" target="_blank">LinkedIn</a>
-                <br />
-                <a href="https://instagram.com/lilalunex" target="_blank">Instagram</a>
+              <div className="hidden md:flex flex-col main-nav-socials ms-auto text-right mr-8 mt-auto mb-1">
+                {isGerman && (
+                  <div>
+                    <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank">{t('dev.profiles.xing')}</a>
+                  </div>
+                )}
+                <div><a href="https://github.com/lilalunex" target="_blank">{t('dev.profiles.github')}</a></div>
+                <div><a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" target="_blank">{t('dev.profiles.linkedin')}</a></div>
+                <div><a href="https://instagram.com/lilalunex" target="_blank">{t('dev.profiles.instagram')}</a></div>
               </div>
               <LanguageSwitcher />
             </div>
