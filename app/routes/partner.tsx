@@ -4,11 +4,11 @@ export default function Partner() {
       <h2 className="text-center py-5">Partner</h2>
 
       <div className="py-5 container mx-auto">
-        <div className="md:flex items-center justify-center md:space-x-8">
+        <div className="md:flex items-center justify-center">
           <img src="/partner/dukkart.png" className="rounded-3xl md:w-96" alt="Sergej Dukkardt" loading="lazy" />
-          <div className="text-center">
-            <h3 className="pt-3">Sergej Dukkardt</h3>
-            <p className="px-3 mx-auto">Photographer. Media Creator. Rental-studio.</p>
+          <div className="text-center mx-8">
+            <h3 className="pt-3">DukkArt Digital</h3>
+            <p className="mx-auto">Photographer. Media Creator. Rental-studio.</p>
             <div className="pt-3 link-holder">
               <a
                 href="http://dukkart.de"
@@ -43,17 +43,16 @@ export default function Partner() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row-reverse items-center justify-center md:space-x-8 w-full pt-12">
+      <div className="flex flex-col md:flex-row-reverse items-center justify-center w-full pt-12">
         <img
           src="/partner/jaxon.png"
-          className="rounded-3xl w-full md:w-96 mb-4 md:mb-0"
+          className="rounded-3xl md:w-96"
           alt="Reza Jaxon"
           loading="lazy"
         />
-
-        <div className="text-center w-full md:w-auto">
+        <div className="text-center mx-8">
           <h3 className="pt-3">Reza Jaxon</h3>
-          <p className="px-3 mx-auto">Dancer. Graffiti Artist. Designer.</p>
+          <p className="mx-auto">Dancer. Graffiti Artist. Designer.</p>
           <div className="pt-3 link-holder">
             <a
               href="https://shibuy.art/"
