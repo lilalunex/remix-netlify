@@ -34,11 +34,13 @@ export default function ChangeLog() {
     },
   ];
 
-
   return (
     <div className="page">
       <h2>Change log</h2>
-      <div>
+      <p>
+        Open repository to this website:<br></br><a href="https://github.com/lilalunex/remix-netlify">This window</a> - <a href="https://github.com/lilalunex/remix-netlify" target="_blank">New tab</a>
+      </p>
+      <div className="pt-8">
         {changeLogEntries.map((entryGroup, index) => (
           <div key={index} className="md:mb-4 pt-4 md:pt-0">
             <div className="flex">
