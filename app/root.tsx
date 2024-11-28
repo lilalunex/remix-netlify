@@ -1,7 +1,8 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration, Link } from "@remix-run/react";
 import { useEffect } from "react";
+import { I18nextProvider } from "react-i18next";
 import LanguageSwitcher from './i18n/LanguageSwitcherDesktop';
-import './i18n/i18n';
+import i18n from "./i18n/i18n";
 
 import "./css/base.css";
 import "./css/dev.css";
@@ -42,60 +43,62 @@ export function Layout({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
-        <Links />
-      </head>
-      <body>
-        <div className="container mx-auto pt-5 md:pt-10">
-          <div className="main-nav-holder flex">
-            <nav className="main-nav mx-auto md:mx-0">
-              <ul className="flex md:space-x-4 text-2xl">
-                <li><Link to="/"><img src="/menu/home.png" alt="Main Menu Navigation Home" loading="lazy" /></Link></li>
-                <li><Link to="/ideas"><img src="/menu/ideas.png" alt="Main Menu Navigation Ideas" loading="lazy" /></Link></li>
-                <li><Link to="/tools"><img src="/menu/tools.png" alt="Main Menu Navigation Tools" loading="lazy" /></Link></li>
-                <li><Link to="/partner"><img src="/menu/partner.png" alt="Main Menu Navigation Partner" loading="lazy" /></Link></li>
-                <li><Link to="/peace"><img src="/menu/peace.png" alt="Main Menu Navigation Peace" loading="lazy" /></Link></li>
-              </ul>
-            </nav>
-            <div className="main-nav-socials ms-auto text-right hidden md:block mr-8">
-              <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank">Xing</a>
-              <br />
-              <a href="https://github.com/lilalunex" target="_blank">GitHub</a>
-              <br />
-              <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" target="_blank">LinkedIn</a>
-              <br />
-              <a href="https://instagram.com/lilalunex" target="_blank">Instagram</a>
+    <I18nextProvider i18n={i18n}>
+      <html lang="en">
+        <head>
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <Meta />
+          <Links />
+        </head>
+        <body>
+          <div className="container mx-auto pt-5 md:pt-10">
+            <div className="main-nav-holder flex">
+              <nav className="main-nav mx-auto md:mx-0">
+                <ul className="flex md:space-x-4 text-2xl">
+                  <li><Link to="/"><img src="/menu/home.png" alt="Main Menu Navigation Home" loading="lazy" /></Link></li>
+                  <li><Link to="/ideas"><img src="/menu/ideas.png" alt="Main Menu Navigation Ideas" loading="lazy" /></Link></li>
+                  <li><Link to="/tools"><img src="/menu/tools.png" alt="Main Menu Navigation Tools" loading="lazy" /></Link></li>
+                  <li><Link to="/partner"><img src="/menu/partner.png" alt="Main Menu Navigation Partner" loading="lazy" /></Link></li>
+                  <li><Link to="/peace"><img src="/menu/peace.png" alt="Main Menu Navigation Peace" loading="lazy" /></Link></li>
+                </ul>
+              </nav>
+              <div className="main-nav-socials ms-auto text-right hidden md:block mr-8">
+                <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank">Xing</a>
+                <br />
+                <a href="https://github.com/lilalunex" target="_blank">GitHub</a>
+                <br />
+                <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" target="_blank">LinkedIn</a>
+                <br />
+                <a href="https://instagram.com/lilalunex" target="_blank">Instagram</a>
+              </div>
+              <LanguageSwitcher />
             </div>
-            <LanguageSwitcher />
+            <main>{children}</main>
           </div>
-          <main>{children}</main>
-        </div>
 
-        <button
-          id="back-to-top"
-          className="fixed bottom-10 right-10 p-4 text-white rounded-full shadow-lg hover:bg-purple-700 transition-all duration-300 opacity-0 invisible"
-          aria-label="Back to top"
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            className="w-6 h-6"
-            strokeWidth="2"
+          <button
+            id="back-to-top"
+            className="fixed bottom-10 right-10 p-4 text-white rounded-full shadow-lg hover:bg-purple-700 transition-all duration-300 opacity-0 invisible"
+            aria-label="Back to top"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <path d="M12 19V6M5 12l7-7 7 7" />
-          </svg>
-        </button>
-        <ScrollRestoration />
-        <Scripts />
-      </body>
-    </html>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              className="w-6 h-6"
+              strokeWidth="2"
+            >
+              <path d="M12 19V6M5 12l7-7 7 7" />
+            </svg>
+          </button>
+          <ScrollRestoration />
+          <Scripts />
+        </body>
+      </html>
+    </I18nextProvider>
   );
 }
 
