@@ -22,7 +22,7 @@ nav.main-nav {
 
 @media (max-width: 768px) {
     nav.main-nav img {
-        height: unset;
+        height: 75px;
     }
 }
 
