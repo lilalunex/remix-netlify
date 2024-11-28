@@ -13,9 +13,26 @@
         }
     },
     "figcaption": {
-        "dukkart": "DukkArt Digital"
+        "dukkart": "Sergej Dukkardt"
     },
     "ideas": {
-        "intro": "Hier findest du:<br><br>💡 Ideen, die ich habe<br>💼 Websites, die ich gemacht habe<br><br><br>Viel Spaß beim Stöbern!"
+        "intro": "Hier findest du:<br><br>💡 Ideen, die ich habe<br>💼 Websites, die ich gemacht habe<br><br><br>Viel Spaß beim Stöbern!",
+        "navi-title": "Navigation:",
+        "mobile-wheel-menu": {
+            "title": "Einhand-Menü für Mobilgeräte",
+            "intro": "Mobile Websites haben ihr Menü oben.<br>Sie sehen gut aus, aber sind nicht besonders praktisch.<br>Die Telefone sind viel zu groß, um sie mit einer Hand zu benutzen.",
+            "ending": "Ich werde diese Idee nicht weiter verfolgen:<br>1. Das Menü würde zu viel Platz in der Mitte der Seite einnehmen. Man könnte es verstecken, aber jedes Mal eine auffällige Geste zu machen, um das Menü zu zeigen, würde den Benutzer stören.<br>2. Lernprozess: Der Inhalt einer Website ist wichtiger als das Menü, das einen dorthin geführt hat.<br><br>Zeichnung auf iPad mit Procreate."
+        },
+        "first-vue-website": {
+            "title": "Erste Vue-Website"
+        },
+        "socialize-mmo": {
+            "title": "Socialize MMO",
+            "text": "Beim Nachdenken über ein kleines Chill-Game, das man hier und da spielen kann, kam mir diese Idee.<br><br>2D-MMO. Spielbar im Browser. Einfach einsteigen. Mit zufälligen Leuten chatten.<br>Vielleicht Features wie Angeln, Wohnen.<br><br>Ich würde gerne irgendwann daran arbeiten.<br>Vor allem zum Spaß und zur Vision."
+        },
+        "the-coworking-hub": {
+            "title": "Coworking Hub",
+            "text": "Ein zentraler Ort für Coworker, um alle möglichen Informationen zu finden:<br><br>- Wie man Dinge macht (z.B. Pomodoro, To-Do-Listen)<br>- Links zu Tools (z.B. pomofocus.io)<br>- Links zu Coworking Twitch-Kanälen"
+        }
     }
 }
