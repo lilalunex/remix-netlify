@@ -1,6 +1,19 @@
 {
   "dev": {
-    "intro": "This website was started to learn the <a href=\"https://remix.run/\" target=\"_blank\">Remix</a> framework.<br className=\"hidden md:block\" /> Sure will not win a design award as of now.<br className=\"hidden md:block\" /> I enjoy Remix and look forward to improve this website."
+    "intro": "This website was started to learn the <a href=\"https://remix.run/\" target=\"_blank\">Remix</a> framework.<br className=\"hidden md:block\" /> Sure will not win a design award as of now.<br className=\"hidden md:block\" /> I enjoy Remix and look forward to improve this website.",
+    "contact-button": "Contact me",
+    "title": "Yet another web developer",
+    "skills": "Skills",
+    "profiles": {
+      "title": "Profiles",
+      "xing": "Xing",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    }
+  },
+  "figcaption": {
+    "dukkart": "DukkArt Digital"
   },
   "ideas": {
     "intro": "Here you will find:<br><br>💡 Ideas I have<br>💼 Websites I made<br><br><br>Have fun strolling around!",

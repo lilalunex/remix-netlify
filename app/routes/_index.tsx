@@ -40,7 +40,7 @@ export default function Index() {
             </figure>
           )}
           <div className="md:w-3/5 text-center">
-            <h1>Yet another web developer</h1>
+            <h1>{t('dev.title')}</h1>
             <p
               dangerouslySetInnerHTML={{
                 __html: t('dev.intro'),
@@ -51,11 +51,11 @@ export default function Index() {
                 href="mailto:&#x61;&#x6c;&#x65;&#x78;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x73;&#x63;&#x68;&#x61;&#x72;&#x6f;&#x77;&#x40;&#x69;&#x63;&#x6c;&#x6f;&#x75;&#x64;&#x2e;&#x63;&#x6f;&#x6d;?subject=Lilalunex Contact Me"
                 className="btn border-2 py-4 px-6 rounded-full"
               >
-                Contact me
+                {t('dev.contact-button')}
               </a>
             </p>
             <div className="pt-8">
-              <h2 className="pb-4">Skills</h2>
+              <h2 className="pb-4">{t('dev.skills')}</h2>
               <div className="skills mx-auto flex flex-wrap justify-center sm:gap-8 md:gap-4">
                 <img src="/dev/skills/html5.png" alt="HTML5" className="w-24 h-24" loading="lazy" />
                 <img src="/dev/skills/css3.png" alt="CSS3" className="w-24 h-24" loading="lazy" />
@@ -83,20 +83,20 @@ export default function Index() {
                   loading="lazy"
                 />
               )}
-              <figcaption className="text-center pt-1">📸 Sergej Dukkardt</figcaption>
+              <figcaption className="text-center pt-1">📸 {t('figcaption.dukkart')}</figcaption>
             </figure>
           </div>
         </div>
         <div className="socials text-center pb-12">
-          <h2>Socials</h2>
+          <h2>{t('dev.profiles.title')}</h2>
           <div className="md:flex justify-center gap-8">
             <div className="pb-6 md:pb-0 gap-4 md:gap-8 flex justify-center">
-              <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank" className="btn border-2 py-4 px-6 rounded-full">Xing</a>
-              <a href="https://github.com/lilalunex" target="_blank" className="btn border-2 py-4 px-6 rounded-full">GitHub</a>
+              <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank" className="btn border-2 py-4 px-6 rounded-full">{t('dev.profiles.xing')}</a>
+              <a href="https://github.com/lilalunex" target="_blank" className="btn border-2 py-4 px-6 rounded-full">{t('dev.profiles.github')}</a>
             </div>
             <div className="gap-4 md:gap-8 flex justify-center">
-              <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" target="_blank" className="btn border-2 py-4 px-6 rounded-full">LinkedIn</a>
-              <a href="https://instagram.com/lilalunex" target="_blank" className="btn border-2 py-4 px-6 rounded-full">Instagram</a>
+              <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" target="_blank" className="btn border-2 py-4 px-6 rounded-full">{t('dev.profiles.linkedin')}</a>
+              <a href="https://instagram.com/lilalunex" target="_blank" className="btn border-2 py-4 px-6 rounded-full">{t('dev.profiles.instagram')}</a>
             </div>
           </div>
         </div>
