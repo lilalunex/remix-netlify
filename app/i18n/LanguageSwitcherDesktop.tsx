@@ -9,7 +9,7 @@ const LanguageSwitcher = () => {
     };
 
     return (
-        <div className="hidden lg:block">
+        <div className="hidden lg:block pr-6">
             <button onClick={() => changeLanguage("en")}>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png" alt="English" width="20" height="15" className="inline mr-2" />
                 English
