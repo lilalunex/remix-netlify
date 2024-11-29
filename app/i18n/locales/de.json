@@ -41,7 +41,7 @@
         "navi-title": "Navigation:",
         "change-log": {
             "title": "Change Log",
-            "intro": "<p>Repository zu dieser Website:<br /><a href=\"https://github.com/lilalunex/remix-netlify\">Dieses Fenster</a> - <a href=\"https://github.com/lilalunex/remix-netlify\" target=\"_blank\" rel=\"noopener noreferrer\">Neues Fenster</a></p>",
+            "intro": "<p>Repository zu dieser Website:<br /><a href=\"https://github.com/lilalunex/remix-netlify\">Dieser Tab</a> - <a href=\"https://github.com/lilalunex/remix-netlify\" target=\"_blank\" rel=\"noopener noreferrer\">Neuer Tab</a></p>",
             "change-log": {
                 "entries": [
                     {
