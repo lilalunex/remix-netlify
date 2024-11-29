@@ -9,11 +9,11 @@ export default function Ideas() {
       <div className="sub-nav">
         <h2>{t('ideas.navi-title')}</h2>
         <ul>
-          <li><Link to="mobile-wheel-menu">- {t('ideas.navi-title')}</Link></li>
+          <li><Link to="mobile-wheel-menu">- {t('ideas.mobile-wheel-menu.title')}</Link></li>
           <br></br>
-          <li><Link to="first-vue-website">- {t('ideas.mobile-wheel-menu.title')}</Link></li>
+          <li><Link to="first-vue-website">- {t('ideas.first-vue-website.title')}</Link></li>
           <br></br>
-          <li><Link to="socialize-mmo">- {t('ideas.first-vue-website.title')}</Link></li>
+          <li><Link to="socialize-mmo">- {t('ideas.socialize-mmo.title')}</Link></li>
           <br></br>
           <li><Link to="the-coworking-hub">- {t('ideas.the-coworking-hub.title')}</Link></li>
         </ul>
