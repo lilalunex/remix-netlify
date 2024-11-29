@@ -46,6 +46,12 @@
             "change-log": {
                 "entries": [
                     {
+                        "date": "28.10.24",
+                        "entries": [
+                            "ローカライズを完了しました：ドイツ語、日本語、ロシア語。"
+                        ]
+                    },
+                    {
                         "date": "26.10.24",
                         "entries": [
                             "Netlifyでホスティング。",
@@ -53,16 +59,16 @@
                         ]
                     },
                     {
-                        "date": "26.10.24",
+                        "date": "23-24.10.24",
                         "entries": [
-                            "Netlifyでホスティング。",
-                            "レスポンシブ対応を追加。"
+                            "このウェブサイトを<a href=\"https://github.com/lilalunex/remix-netlify/tree/fbe90f84b1aec5abe1b8b6c588aef7ef228b5699\" target=\"_blank\" rel=\"noopener noreferrer\">バージョン1.0</a>で実現。"
                         ]
                     },
                     {
-                        "date": "23-24.10.24",
+                        "date": "20.10.24",
                         "entries": [
-                            "このウェブサイトをバージョン1.0で実現。"
+                            "新しい仕事のためにRemixを学び始めました。",
+                            "Remixでこのウェブサイトを作成する予定です。"
                         ]
                     }
                 ]

@@ -45,6 +45,12 @@
             "change-log": {
                 "entries": [
                     {
+                        "date": "28.10.24",
+                        "entries": [
+                            "Lokalisierung abgeschlossen: Deutsch, Japanisch, Russisch."
+                        ]
+                    },
+                    {
                         "date": "26.10.24",
                         "entries": [
                             "Hosting auf Netlify.",
@@ -52,16 +58,16 @@
                         ]
                     },
                     {
-                        "date": "26.10.24",
+                        "date": "23-24.10.24",
                         "entries": [
-                            "Hosting auf Netlify.",
-                            "Responsivität hinzugefügt."
+                            "Diese Website in <a href=\"https://github.com/lilalunex/remix-netlify/tree/fbe90f84b1aec5abe1b8b6c588aef7ef228b5699\" target=\"_blank\" rel=\"noopener noreferrer\">Version 1.0</a> erstellt."
                         ]
                     },
                     {
-                        "date": "23-24.10.24",
+                        "date": "20.10.24",
                         "entries": [
-                            "Diese Website in Version 1.0 erstellt."
+                            "Begonnen, Remix für einen möglichen neuen Job zu lernen.",
+                            "Planung, diese Website mit Remix zu erstellen."
                         ]
                     }
                 ]
