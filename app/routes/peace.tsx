@@ -1,19 +1,25 @@
+import { useTranslation } from 'react-i18next';
+
 export default function Peace() {
+  const { t } = useTranslation();
+
   return (
     <div className="peace text-center">
-      <h2>"The faster the world moves, the slower I go."</h2>
-      <img src="/peace/peace.jpg" alt="Dancer in split decision" className="rounded md:w-1/2 mx-auto" loading="lazy" />
-      <p className="pt-8">
-        The machines are there to make our lives easier. Not to replace them.
-        <br></br>
-        <br></br>
-        Don't forget in our hasty technology times to take some time to breath.
-        <br></br>
-        <br></br>
-        Don't ask yourself what gadget you can get next - look around what you can reduce in your life.
-      </p>
-      <p className="pt-24">Relax, Breath & Move.</p>
-      <p className="text-8xl pt-8">✌</p>
+      <h2>{t('peace.quote')}</h2>
+      <img
+        src="/peace/peace.jpg"
+        alt="Dancer in split decision"
+        className="rounded md:w-1/2 mx-auto"
+        loading="lazy"
+      />
+      <p
+        className='pt-8'
+        dangerouslySetInnerHTML={{
+          __html: t('peace.description'),
+        }}
+      ></p>
+      <p className="pt-24">{t('peace.footer')}</p>
+      <p className="text-8xl pt-8">{t('peace.emoji')}</p>
     </div>
   );
 }

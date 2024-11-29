@@ -78,5 +78,31 @@
         "hide": "Hide"
       }
     }
+  },
+  "partner": {
+    "title": "Partner",
+    "dukkart": {
+      "name": "DukkArt Digital",
+      "description": "Photographer. Media Creator. Rental-studio.",
+      "links": {
+        "website": "Website",
+        "rentalStudio": "Rental-studio",
+        "instagram": "Instagram"
+      }
+    },
+    "jaxon": {
+      "name": "Reza Jaxon",
+      "description": "Dancer. Graffiti Artist. Designer.",
+      "links": {
+        "website": "Website",
+        "instagram": "Instagram"
+      }
+    }
+  },
+  "peace": {
+    "quote": "\"The faster the world moves, the slower I go.\"",
+    "description": "The machines are there to make our lives easier. Not to replace them.<br />Don't forget in our hasty technology times to take some time to breathe.<br />Don't ask yourself what gadget you can get next - look around what you can reduce in your life.",
+    "footer": "Relax, Breath & Move.",
+    "emoji": "✌"
   }
 }

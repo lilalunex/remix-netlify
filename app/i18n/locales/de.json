@@ -76,5 +76,31 @@
                 "hide": "Verbergen"
             }
         }
+    },
+    "partner": {
+        "title": "Partner",
+        "dukkart": {
+            "name": "DukkArt Digital",
+            "description": "Fotograf. Media Creator. Mietstudio.",
+            "links": {
+                "website": "Website",
+                "rentalStudio": "Mietstudio",
+                "instagram": "Instagram"
+            }
+        },
+        "jaxon": {
+            "name": "Reza Jaxon",
+            "description": "Tänzer. Graffiti-Künstler. Designer.",
+            "links": {
+                "website": "Website",
+                "instagram": "Instagram"
+            }
+        }
+    },
+    "peace": {
+        "quote": "\"Je schneller sich die Welt bewegt, desto langsamer werde ich.\"",
+        "description": "Die Maschinen sind da, um unser Leben zu erleichtern. Nicht, um es zu ersetzen.<br />Vergiss nicht in unseren hektischen Zeiten nicht, sich Zeit zum Atmen zu nehmen.<br />Frag dich nicht, welches Gadget du als Nächstes kaufen kannst – schau dich um, was du im Leben reduzieren kannst.",
+        "footer": "Entspannen, atmen & bewegen.",
+        "emoji": "✌"
     }
 }

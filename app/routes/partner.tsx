@@ -1,14 +1,23 @@
+import { useTranslation } from 'react-i18next';
+
 export default function Partner() {
+  const { t } = useTranslation();
+
   return (
     <div className="partner">
-      <h2 className="text-center py-5">Partner</h2>
+      <h2 className="text-center py-5">{t('partner.title')}</h2>
 
       <div className="py-5 container mx-auto">
         <div className="md:flex items-center justify-center">
-          <img src="/partner/dukkart.png" className="rounded-3xl md:w-96" alt="Sergej Dukkardt" loading="lazy" />
+          <img
+            src="/partner/dukkart.png"
+            className="rounded-3xl md:w-96"
+            alt={t('partner.dukkart.name')}
+            loading="lazy"
+          />
           <div className="text-center mx-8">
-            <h3 className="pt-3">DukkArt Digital</h3>
-            <p className="mx-auto">Photographer. Media Creator. Rental-studio.</p>
+            <h3 className="pt-3">{t('partner.dukkart.name')}</h3>
+            <p className="mx-auto">{t('partner.dukkart.description')}</p>
             <div className="pt-3 link-holder">
               <a
                 href="http://dukkart.de"
@@ -16,7 +25,7 @@ export default function Partner() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Website
+                {t('partner.dukkart.links.website')}
               </a>
             </div>
             <div className="pt-5 link-holder">
@@ -26,7 +35,7 @@ export default function Partner() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Rental-studio
+                {t('partner.dukkart.links.rentalStudio')}
               </a>
             </div>
             <div className="pt-5 link-holder">
@@ -36,7 +45,7 @@ export default function Partner() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Instagram
+                {t('partner.dukkart.links.instagram')}
               </a>
             </div>
           </div>
@@ -47,12 +56,12 @@ export default function Partner() {
         <img
           src="/partner/jaxon.png"
           className="rounded-3xl md:w-96"
-          alt="Reza Jaxon"
+          alt={t('partner.jaxon.name')}
           loading="lazy"
         />
         <div className="text-center mx-8">
-          <h3 className="pt-3">Reza Jaxon</h3>
-          <p className="mx-auto">Dancer. Graffiti Artist. Designer.</p>
+          <h3 className="pt-3">{t('partner.jaxon.name')}</h3>
+          <p className="mx-auto">{t('partner.jaxon.description')}</p>
           <div className="pt-3 link-holder">
             <a
               href="https://shibuy.art/"
@@ -60,7 +69,7 @@ export default function Partner() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Website
+              {t('partner.jaxon.links.website')}
             </a>
           </div>
           <div className="pt-5 link-holder">
@@ -70,12 +79,11 @@ export default function Partner() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram
+              {t('partner.jaxon.links.instagram')}
             </a>
           </div>
         </div>
       </div>
-
     </div>
   );
 }
