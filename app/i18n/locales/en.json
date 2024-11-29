@@ -47,26 +47,26 @@
         "title": "Change Log",
         "entries": [
           {
-            "date": "28.10.24",
+            "date": "10/28/24",
             "entries": [
               "Finalized localization: German, Japanese, Russian."
             ]
           },
           {
-            "date": "26.10.24",
+            "date": "10/26/24",
             "entries": [
               "Hosting on Netlify.",
               "Added responsiveness.<br><i className='font-extralight'>&nbsp;&nbsp;&nbsp;&nbsp;💭 Looks pretty neat on mobile.</i></p>"
             ]
           },
           {
-            "date": "23-24.10.24",
+            "date": "10/23-24/24",
             "entries": [
               "Realizing this website in <a href=\"https://github.com/lilalunex/remix-netlify/tree/fbe90f84b1aec5abe1b8b6c588aef7ef228b5699\" target=\"_blank\" rel=\"noopener noreferrer\">version 1.0</a>."
             ]
           },
           {
-            "date": "20.10.24",
+            "date": "10/20/24",
             "entries": [
               "Starting to learn Remix for potential new job.",
               "Planning on creating this website with Remix."
