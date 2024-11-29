@@ -1,45 +1,27 @@
+import { useTranslation } from "react-i18next";
+
+type ChangeLogEntry = {
+  date: string;
+  entries: (string | JSX.Element)[];
+};
+
 export default function ChangeLog() {
-  const changeLogEntries = [
-    {
-      date: "26.10.24",
-      entries: [
-        "Hosting on Netlify.",
-        <p>
-          Added responsiveness.<br></br><i className="pl-8 font-extralight">💭 Looks pretty neat on mobile.</i>
-        </p>
-      ],
-    },
-    {
-      date: "23-24.10.24",
-      entries: [
-        <span>
-          Realizing this website in{" "}
-          <a
-            href="https://github.com/lilalunex/remix-netlify/tree/fbe90f84b1aec5abe1b8b6c588aef7ef228b5699"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            version 1.0
-          </a>
-          .
-        </span>,
-      ],
-    },
-    {
-      date: "20.10.24",
-      entries: [
-        "Starting to learn Remix for potential new job.",
-        "Planning on creating this website with Remix.",
-      ],
-    },
-  ];
+  const { t } = useTranslation();
+
+  const changeLogEntries = t('tools.change-log.change-log.entries', { returnObjects: true }) as ChangeLogEntry[];
+
+  if (!Array.isArray(changeLogEntries)) {
+    return <div>No changelog entries available.</div>;
+  }
 
   return (
     <div className="page">
-      <h2>Change log</h2>
-      <p>
-        Open repository to this website:<br></br><a href="https://github.com/lilalunex/remix-netlify">This window</a> - <a href="https://github.com/lilalunex/remix-netlify" target="_blank">New tab</a>
-      </p>
+      <h2>{t('tools.change-log.title')}</h2>            
+      <p
+        dangerouslySetInnerHTML={{
+          __html: t('tools.change-log.intro'),
+        }}
+      ></p>
       <div className="pt-8">
         {changeLogEntries.map((entryGroup, index) => (
           <div key={index} className="md:mb-4 pt-4 md:pt-0">
@@ -47,7 +29,7 @@ export default function ChangeLog() {
               <div className="font-bold w-32">{entryGroup.date}</div>
               <div className="flex-1">
                 {entryGroup.entries.map((entry, entryIndex) => (
-                  <p key={entryIndex} className="pl-4">{entry}</p>
+                  <p key={entryIndex} className="pl-4" dangerouslySetInnerHTML={{ __html: entry as string }} />
                 ))}
               </div>
             </div>

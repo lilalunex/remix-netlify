@@ -35,5 +35,48 @@
       "title": "The coworking hub",
       "text": "A goto place for coworkers to find all sorts of information:<br><br>- how to (i.e. pomodoro, todolists)<br>- links to tools (i.e. pomofocus.io)<br>- links to coworking twitch channels"
     }
+  },
+  "tools": {
+    "title": "Tools",
+    "intro": "<p>Ideas for tools, to play around,<br>learn and think of solutions:<br><br>➖ Calculator<br>➖ Countdown<br>➖ Timer<br>➖ Alarm<br>➖ Pomodoro timer<br>➖ Button: Sum of clicks across<br>all users to realize REST API<br>➖ Coin throw with ThreeJS<br>➖ Coin counter<br>➖ Coin throw plain javascript</p>",
+    "navi-title": "Navigation:",
+    "change-log": {
+      "title": "Change Log",
+      "intro": "<p>Open repository to this website:<br /><a href=\"https://github.com/lilalunex/remix-netlify\">This window</a> - <a href=\"https://github.com/lilalunex/remix-netlify\" target=\"_blank\" rel=\"noopener noreferrer\">New tab</a></p>",
+      "change-log": {
+        "title": "Change Log",
+        "entries": [
+          {
+            "date": "26.10.24",
+            "entries": [
+              "Hosting on Netlify.",
+              "Added responsiveness.<br><i className='font-extralight'>&nbsp;&nbsp;&nbsp;&nbsp;💭 Looks pretty neat on mobile.</i></p>"
+            ]
+          },
+          {
+            "date": "26.10.24",
+            "entries": [
+              "Hosting on Netlify.",
+              "Added responsiveness."
+            ]
+          },
+          {
+            "date": "23-24.10.24",
+            "entries": [
+              "Realizing this website in version 1.0."
+            ]
+          }
+        ]
+      }
+    },
+    "information-about-you": {
+      "title": "Information about you",
+      "ip": {
+        "ipAddress": "Your IP address",
+        "copyToClipboard": "Copy to clipboard",
+        "show": "Show",
+        "hide": "Hide"
+      }
+    }
   }
 }

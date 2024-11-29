@@ -34,5 +34,47 @@
             "title": "Coworking Hub",
             "text": "Ein zentraler Ort für Coworker, um alle möglichen Informationen zu finden:<br><br>- Wie man Dinge macht (z.B. Pomodoro, To-Do-Listen)<br>- Links zu Tools (z.B. pomofocus.io)<br>- Links zu Coworking Twitch-Kanälen"
         }
+    },
+    "tools": {
+        "title": "Werkzeuge",
+        "intro": "<p>Ideen für Werkzeuge, zum Ausprobieren,<br>lernen und über Lösungen nachdenken:<br><br>➖ Taschenrechner<br>➖ Countdown<br>➖ Timer<br>➖ Alarm<br>➖ Pomodoro-Timer<br>➖ Button: Summe der Klicks aller Nutzer, um REST API zu realisieren<br>➖ Münzwurf mit ThreeJS<br>➖ Münzzähler<br>➖ Münzwurf mit JavaScript</p>",
+        "navi-title": "Navigation:",
+        "change-log": {
+            "title": "Change Log",
+            "intro": "<p>Repository zu dieser Website:<br /><a href=\"https://github.com/lilalunex/remix-netlify\">Dieses Fenster</a> - <a href=\"https://github.com/lilalunex/remix-netlify\" target=\"_blank\" rel=\"noopener noreferrer\">Neues Fenster</a></p>",
+            "change-log": {
+                "entries": [
+                    {
+                        "date": "26.10.24",
+                        "entries": [
+                            "Hosting auf Netlify.",
+                            "Responsivität hinzugefügt.<br><i className='font-extralight'>&nbsp;&nbsp;&nbsp;&nbsp;💭 Sieht auf Mobilgeräten ziemlich gut aus.</i></p>"
+                        ]
+                    },
+                    {
+                        "date": "26.10.24",
+                        "entries": [
+                            "Hosting auf Netlify.",
+                            "Responsivität hinzugefügt."
+                        ]
+                    },
+                    {
+                        "date": "23-24.10.24",
+                        "entries": [
+                            "Diese Website in Version 1.0 erstellt."
+                        ]
+                    }
+                ]
+            }
+        },
+        "information-about-you": {
+            "title": "Informationen über dich",
+            "ip": {
+                "ipAddress": "Deine IP-Adresse",
+                "copyToClipboard": "In die Zwischenablage kopieren",
+                "show": "Anzeigen",
+                "hide": "Verbergen"
+            }
+        }
     }
 }

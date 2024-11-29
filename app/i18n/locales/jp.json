@@ -35,5 +35,47 @@
             "title": "コワーキングハブ",
             "text": "コワーカーがあらゆる情報を見つけるための場所：<br><br>- やり方（例：ポモドーロ、ToDoリスト）<br>- ツールへのリンク（例：pomofocus.io）<br>- コワーキングのTwitchチャンネルへのリンク"
         }
+    },
+    "tools": {
+        "title": "ツール",
+        "intro": "<p>ツールのアイデア、遊んだり、学んだり、解決策を考えたりするための:<br><br>➖ 計算機<br>➖ カウントダウン<br>➖ タイマー<br>➖ アラーム<br>➖ ポモドーロタイマー<br>➖ ボタン: すべてのユーザーのクリック数の合計を使ってREST APIを実現<br>➖ ThreeJSを使ったコイン投げ<br>➖ コインカウンター<br>➖ 純粋なJavaScriptでのコイン投げ</p>",
+        "navi-title": "ナビゲーション:",
+        "change-log": {
+            "title": "変更履歴",
+            "intro": "<p>このウェブサイトのリポジトリを開く:<br /><a href=\"https://github.com/lilalunex/remix-netlify\">このウィンドウ</a> - <a href=\"https://github.com/lilalunex/remix-netlify\" target=\"_blank\" rel=\"noopener noreferrer\">新しいタブ</a></p>",
+            "change-log": {
+                "entries": [
+                    {
+                        "date": "26.10.24",
+                        "entries": [
+                            "Netlifyでホスティング。",
+                            "レスポンシブ対応を追加。<br><i className='font-extralight'>&nbsp;&nbsp;&nbsp;&nbsp;💭 モバイルでもかなり良さそう。</i></p>"
+                        ]
+                    },
+                    {
+                        "date": "26.10.24",
+                        "entries": [
+                            "Netlifyでホスティング。",
+                            "レスポンシブ対応を追加。"
+                        ]
+                    },
+                    {
+                        "date": "23-24.10.24",
+                        "entries": [
+                            "このウェブサイトをバージョン1.0で実現。"
+                        ]
+                    }
+                ]
+            }
+        },
+        "information-about-you": {
+            "title": "あなたに関する情報",
+            "ip": {
+                "ipAddress": "あなたのIPアドレス",
+                "copyToClipboard": "クリップボードにコピー",
+                "show": "表示",
+                "hide": "非表示"
+            }
+        }
     }
 }
