@@ -91,13 +91,11 @@ export default function Index() {
         <div className="socials text-center pb-12">
           <h2>{t('dev.profiles.title')}</h2>
           <div className="md:flex justify-center gap-8">
-            <div className="pb-6 md:pb-0 gap-4 md:gap-8 flex justify-center">
+            <div className="pb-6 md:pb-0 gap-4 md:gap-8 flex flex-col md:flex-row justify-center">
               {isGerman && (
                 <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank" className="btn border-2 py-4 px-6 rounded-full">{t('dev.profiles.xing')}</a>
               )}
               <a href="https://github.com/lilalunex" target="_blank" className="btn border-2 py-4 px-6 rounded-full">{t('dev.profiles.github')}</a>
-            </div>
-            <div className="gap-4 md:gap-8 flex justify-center">
               <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" target="_blank" className="btn border-2 py-4 px-6 rounded-full">{t('dev.profiles.linkedin')}</a>
               <a href="https://instagram.com/lilalunex" target="_blank" className="btn border-2 py-4 px-6 rounded-full">{t('dev.profiles.instagram')}</a>
             </div>
