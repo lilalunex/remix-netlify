@@ -88,10 +88,10 @@ export default function Index() {
             </figure>
           </div>
         </div>
-        <div className="socials text-center pb-12">
+        <div className="profiles text-center pb-12">
           <h2>{t('dev.profiles.title')}</h2>
           <div className="md:flex justify-center gap-8">
-            <div className="pb-6 md:pb-0 gap-4 md:gap-8 flex flex-col md:flex-row justify-center">
+            <div className="pb-6 md:pb-0 gap-4 md:gap-8 flex flex-col md:flex-row justify-center items-center">
               {isGerman && (
                 <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" target="_blank" className="btn border-2 py-4 px-6 rounded-full">{t('dev.profiles.xing')}</a>
               )}

@@ -7,10 +7,14 @@
     .skills {
         max-width: 500px;
     }
+}
 
-    .socials {
-        a {
-            min-width: 120px;
+@media (max-width: 767.98px) {
+    .dev {
+        .profiles {
+            a {
+                min-width: 240px;
+            }
         }
     }
 }
