@@ -26,3 +26,22 @@ h3 {
 h4 {
     font-size: 20px;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+    text-wrap: pretty;
+}
+
+.mw-ctrl {
+    max-width: 65ch;
+}

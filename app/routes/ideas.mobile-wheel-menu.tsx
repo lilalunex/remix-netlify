@@ -6,6 +6,7 @@ export default function MobileWhileMenu() {
   return <div className="idea mobile-wheel-menu">
     <h2>One handed mobile menu</h2>
     <p
+      className="mw-ctrl"
       dangerouslySetInnerHTML={{
         __html: t('ideas.mobile-wheel-menu.intro'),
       }}
@@ -19,6 +20,7 @@ export default function MobileWhileMenu() {
     </div>
 
     <p
+      className="mw-ctrl"
       dangerouslySetInnerHTML={{
         __html: t('ideas.mobile-wheel-menu.ending'),
       }}
