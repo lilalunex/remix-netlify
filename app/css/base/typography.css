@@ -1,0 +1,45 @@
+body {
+    /* color: #212121; */
+    /* color: transparent; */
+    /* color: silver; */
+}
+
+nav {
+    ul li {
+        font-weight: bold;
+        /* text-transform: uppercase; */
+        font-size: 18px;
+
+        a {
+            color: theme("colors.warm-orange");
+            text-shadow: 2px 2px 0 #424242;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+    text-wrap: pretty;
+}
+
+p {
+    max-width: 65ch;
+    color: theme("colors.deeper-brown");
+}
+
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 60px !important;
+    color: theme("colors.earthy-brown");
+    text-underline-offset: 10px;
+}

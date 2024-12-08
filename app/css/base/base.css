@@ -1,0 +1,25 @@
+@keyframes pulse {
+    0% {
+        background-color: theme("colors.soft-cream");
+    }
+
+    50% {
+        background-color: theme("colors.warm-beige");
+    }
+
+    100% {
+        background-color: theme("colors.soft-cream");
+    }
+}
+
+body {
+    background: theme("colors.soft-cream");
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 1px, transparent 1px);
+    background-size: 32px 32px;
+    animation: pulse 6s infinite ease-in-out;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
