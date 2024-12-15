@@ -1,30 +1,6 @@
 .content-box {
     border-radius: 50px;
-    border-color: red;
-    border-width: 3px;
-
-    .breathing-circle {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: #318bb2;
-        animation: wave-breathing 4s ease-in-out infinite;
-    }
-}
-
-@keyframes wave-breathing {
-    0% {
-        transform: scale(1);
-        /* Initial size */
-    }
-
-    50% {
-        transform: scale(1.2);
-        /* Larger size at the middle */
-    }
-
-    100% {
-        transform: scale(1);
-        /* Back to initial size */
-    }
+    border-color: theme("colors.golden-tan");
+    border-width: 6px;
+    background: rgba(239, 232, 220, .5);
 }

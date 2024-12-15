@@ -7,6 +7,8 @@ import {
   Link
 } from "@remix-run/react";
 
+import ColorPalette from "./routes/utilities/ColorPalette";
+
 import "./css/main.css";
 
 const navLinks = [
@@ -43,6 +45,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <ColorPalette></ColorPalette>
         <nav>
           <ul className="flex justify-between items-center px-24">
             {navLinks?.map((link) => (
@@ -54,7 +57,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
             ))}
           </ul>
         </nav>
-        <main className="container">{children}</main>
+        <main>{children}</main>
+        <footer>
+          
+        </footer>
         <ScrollRestoration />
         <Scripts />
       </body>

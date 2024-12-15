@@ -1,0 +1,7 @@
+.btn {
+    border-color: theme("colors.soft-cream");
+}
+
+.btn:hover {
+    border-color: theme("colors.soft-cream");
+}
