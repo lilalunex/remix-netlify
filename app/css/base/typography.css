@@ -4,8 +4,19 @@ nav {
         font-size: 18px;
 
         a {
-            color: theme("colors.golden-tan");
-            text-shadow: 1px 1px 1px black;
+            /* color: theme("colors.soft-cream"); */
+            color: theme("colors.muted-sand");
+            /* text-shadow: 1px 1px 3px black; */
+            text-shadow: 3px 2px 1px theme("colors.deeper-brown");
+            font-size: 28px;
+            font-family: "Roboto Condensed", sans-serif;
+            transition: .6s;
+        }
+
+        a:hover {
+            color: theme("colors.deeper-brown");
+            /* text-shadow: 3px 2px 1px theme("colors.muted-sand"); */
+            text-shadow: none;
         }
     }
 }

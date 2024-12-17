@@ -1,3 +1,7 @@
+:root {
+    --scale-big: 1.6;
+}
+
 .inner-breathing-circle-backgound {
     height: 240px;
     width: 240px;
@@ -41,25 +45,20 @@ span#breathing-text {
 }
 
 @keyframes breathing {
-
-    0%,
-    15% {
+    0%, 15% {
         transform: scale(1);
         border-width: 100px;
         border-color: theme("colors.dusky-pink");
     }
-
     45% {
-        transform: scale(1.6);
+        transform: scale(var(--scale-big));
         border-color: theme("colors.muted-blood-red");
     }
-
     70% {
-        transform: scale(1.6);
+        transform: scale(var(--scale-big));
         border-width: 32px;
         border-color: theme("colors.muted-blood-red");
     }
-
     100% {
         transform: scale(1);
         border-width: 100px;
@@ -72,22 +71,18 @@ span#breathing-text {
         transform: scale(0);
         opacity: 0;
     }
-
     50% {
         transform: scale(0);
         opacity: 0;
     }
-
     60% {
-        transform: scale(1.6);
+        transform: scale(var(--scale-big));
         opacity: 1;
     }
-
     70% {
-        transform: scale(1.6);
+        transform: scale(var(--scale-big));
         opacity: 0;
     }
-
     100% {
         opacity: 0;
         transform: scale(0);

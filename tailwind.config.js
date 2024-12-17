@@ -14,10 +14,11 @@ export default {
         "light-fleshy-pink": "#e5b9b4",
         "muted-blood-red": "#d97a7a",
         "dusky-pink": "#D979B3",
-        "soft-gold": "#F5CC84"
+        "soft-gold": "#F5CC84",
+        "lotus-border": "#695950"
       },
       spacing: {
-        "nav-height": "64px",
+        "nav-height": "76px",
         "nav-ul-height": "56px",
         "border-left-right": "9px",
         "border-bottom-width": "3px",

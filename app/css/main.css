@@ -8,6 +8,11 @@
 /* @import url(component/portrait.css); */
 
 @import url(utilities/container.css);
+/* @import url(utilities/ibm-carbon.css); */
 @import url(utilities/tailwind.css);
 
 /* *, *::after, *::before { outline: 2px solid indigo; } */
+
+/* .min-h-screen-hero {
+    border-bottom: 4px solid theme("colors.lotus-border");
+} */

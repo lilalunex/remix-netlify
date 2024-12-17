@@ -1,3 +1,5 @@
+// import '@carbon/styles/css/styles.min.css';
+
 import {
   Links,
   Meta,
@@ -32,7 +34,7 @@ export const links = () => [
   {
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap",
-  },
+  }
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -45,7 +47,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <ColorPalette></ColorPalette>
+        {/* <ColorPalette></ColorPalette> */}
         <nav>
           <ul className="flex justify-between items-center px-24">
             {navLinks?.map((link) => (
@@ -59,7 +61,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </nav>
         <main>{children}</main>
         <footer>
-          
+
         </footer>
         <ScrollRestoration />
         <Scripts />
