@@ -37,21 +37,20 @@ export default function Index() {
   }, []);
 
   const mindfulEntries = [
-    "Are you currently using a digital device because<br>you want to or just out of habit to kill time?",
+    "Are you currently using a digital device because<br>you need to or just out of habit to kill time?",
     "Don't think about which gadget you can get next.<br>Take a moment to consider what you can let go of.",
   ];
 
   return (
     <>
-      <div className="container min-h-screen-hero flex flex-wrap justify-between items-center">
+      <div className="container min-h-screen flex flex-wrap justify-between items-center pb-48">
         <div className="content-box w-1/2 p-12">
           <h1 className="underline">Relax, Breathe & Code.</h1>
           <div className="pt-4">
             <ul>
-              <li>💻 Web Developer</li>
-              <li>💻 Polyglot in the making</li>
-              <li>🌆 Based in Germany</li>
-              <li>🧘‍♂️ The faster the world moves, the slower I go</li>
+              <li>🧘🏼 The faster the world moves, the slower I go</li>
+              <li>📿 Mindful & Intentional</li>
+              <li>✨ Quality takes time</li>
             </ul>
           </div>
           <a
@@ -67,28 +66,13 @@ export default function Index() {
           <span id="breathing-text" className="absolute pt-21">breathe in</span>
         </div>
 
-        <div
-          className="w-full border absolute"
-          style={{
-            top: "100%",
-            left: "50%",
-            transform: "translateX(-50%)",
-            borderWidth: "3px",
-            borderColor: "#695950"
-          }}
-        ></div>
-        <div className="absolute left-1/2 -translate-x-1/2"
-          style={{
-            bottom: "-104px"
-          }}
-        >
+        <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2">
           <img src="/public/home/lotus.png" alt="" />
         </div>
-
       </div>
 
-      <div className="bg-white" style={{ paddingTop: "48px" }}>
-        <div className="container text-center py-24">
+      <div className="bg-white py-24">
+        <div className="container text-center">
           <h2>Mindful & Intentional</h2>
           {mindfulEntries.map((entry, index) => (
             <p
@@ -101,19 +85,24 @@ export default function Index() {
         </div>
       </div>
 
-      <div>
-        <div className="container text-center pt-24 flex">
-          <div className="w-3/5">
-            <h2>Lunex Edakumi</h2>
-            <p className="mx-auto">
-              In a hasty time ...<br></br>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </p>
-          </div>
-          <div className="w-5/5">
-            <img src="/public/home/lunex_split.png" alt="" />
+      <div className="container text-center flex items-center py-24">
+        <div className="w-full">
+          <img src="/public/home/lunex_split.png" alt="" />
+        </div>
+        <div className="absolute right-96 pb-96 p-12 text-center">
+          <h2 className="underline">Lunex Edakumi</h2>
+          <div className="pt-4">
+            <ul>
+              <li>💻 Web Developer</li>
+              <li>📌 Based in Germany</li>
+              <li>🌍 Polyglot</li>
+            </ul>
           </div>
         </div>
+      </div>
+
+      <div className="bg-white">
+        TODO: lotus with hr into footer on white background
       </div>
     </>
   );

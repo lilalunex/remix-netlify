@@ -47,8 +47,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {/* <ColorPalette></ColorPalette> */}
-        <nav>
+        {/* <div className="fixed w-full pt-24"><ColorPalette></ColorPalette></div> */}
+        <nav className="fixed w-full left-1/2 -translate-x-1/2 z-50">
           <ul className="flex justify-between items-center px-24">
             {navLinks?.map((link) => (
               <li key={link.path}>
